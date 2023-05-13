@@ -1,4 +1,7 @@
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSolid, faSouse } from '@fortawesome/free-solid-svg-icons'
+
 
 function Navbar() {
   document.addEventListener("scroll", function (e) {
@@ -41,11 +44,13 @@ function Navbar() {
               to="headerbg"
               style={{ cursor: "pointer" }}
             >
-              DarkLeas
+              My Canada
             </Link>
           </h1>
           <ul className="bar">
             <li>
+              <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/smart-home-1.png'></img>
+              <FontAwesomeIcon icon="fa-solid fa-house" />
               <Link
                 onClick={openBar}
                 activeClass="active"
@@ -54,10 +59,11 @@ function Navbar() {
                 duration={1000}
                 to="headerbg"
               >
-                Home
+                Acceil
               </Link>
             </li>
             <li>
+              <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/technology.png'></img>
               <Link
                 onClick={openBar}
                 activeClass="active"
@@ -66,7 +72,7 @@ function Navbar() {
                 smooth={true}
                 duration={1000}
               >
-                Services
+                Nos Services
               </Link>
             </li>
             <li>
@@ -78,10 +84,11 @@ function Navbar() {
                 duration={1000}
                 activeClass="active"
               >
-                About
+                À propos
               </Link>
             </li>
             <li>
+            <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/contact.png'></img>
               <Link
                 onClick={openBar}
                 to="contact"
