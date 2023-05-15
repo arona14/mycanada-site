@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faSolid, faSouse } from '@fortawesome/free-solid-svg-icons'
+
+import { FaHome } from 'react-icons/fa'
+import { AiFillSetting, AiFillBank } from  "react-icons/ai"
+import { BsFillChatRightDotsFill } from "react-icons/bs"
 
 
 function Navbar() {
@@ -49,8 +51,7 @@ function Navbar() {
           </h1>
           <ul className="bar">
             <li>
-              <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/smart-home-1.png'></img>
-              <FontAwesomeIcon icon="fa-solid fa-house" />
+              <FaHome className="icons home" />
               <Link
                 onClick={openBar}
                 activeClass="active"
@@ -63,7 +64,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/technology.png'></img>
+              <AiFillSetting className="icons home"/>
               <Link
                 onClick={openBar}
                 activeClass="active"
@@ -76,6 +77,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <AiFillBank className="icons home"/>
               <Link
                 onClick={openBar}
                 to="about-scroll"
@@ -84,11 +86,11 @@ function Navbar() {
                 duration={1000}
                 activeClass="active"
               >
-                À propos
+                A propos
               </Link>
             </li>
             <li>
-            <img width="20" height="20" src='https://sabmadigital.com/wp-content/uploads/contact.png'></img>
+              <BsFillChatRightDotsFill className="icons home"/>
               <Link
                 onClick={openBar}
                 to="contact"

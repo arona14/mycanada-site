@@ -577,3 +577,10 @@ ul li a {
 .mb-1 {
   margin-bottom: 1rem!important;
 }
+.icon {
+  height: 50px;
+  width: 100px;
+}
+.home{
+  color: #01bf71;
+}
